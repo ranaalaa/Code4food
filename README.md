@@ -21,4 +21,7 @@ Mission:
 
 Aiding companies to reach their business objectives.
 
+logo: 
+http://www4.0zz0.com/2015/02/16/11/600589775.jpeg
+
 
