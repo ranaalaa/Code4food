@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-HEAD
 
   before_action :authenticate_user!, except: [:index, :show]
 
