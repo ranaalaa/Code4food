@@ -11,13 +11,13 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
     def new
-  @article = current_user.articles.build
+  @article = current_user.Article.build
 end
  def edit
   @article = Article.find(params[:id])
 end
 def create
-  @article = current_user.articles.build(article_params)
+  @article = current_user.Article.build(article_params)
  
   if @article.save
     redirect_to @article
