@@ -1,7 +1,7 @@
-<h1>Listing articles</h1>
+<h1>Listing posts</h1>
 <% if user_signed_in? %>
 <% if current_user.admin? %>
- <%= link_to 'New article', new_article_path %>
+ <%= link_to 'New post', new_article_path %>
 <% end %>
  <% end %>
 
