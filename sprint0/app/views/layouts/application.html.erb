@@ -18,6 +18,16 @@
 	<%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
 	<% end %>
 </div>
+<style type="text/css">
+
+    body {
+      background-image:url('http://www.imageupload.co.uk/images/2015/02/21/4.jpg');
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+    
+    }
+
+</style>
 <%flash.each do |name, msg| %>
 <%= content_tag :div, msg, :id => "flash_#{name}" %>
 <% end %>
