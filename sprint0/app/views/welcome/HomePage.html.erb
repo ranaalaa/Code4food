@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <head>
 <title>Code4Food</title>
 <link rel="stylesheet" type= "text/css"href="HomePage.css">
@@ -11,8 +10,8 @@
 <p style="font-family:verdana" ,style="text-align:center"><i><em><b>Connecting Logic, Making Magic!</b></em></i></p>
 <div id="menu">
 <ul><br>
-  
-<li><a href="<%= url_for controller: 'welcome', action: 'HomePage' %>">Home</a></li>
+   <li><a href="<%= url_for controller: 'welcome', action: 'HomePage' %>">Home</a></li>
+
         <li><a href="<%= url_for controller: 'articles', action: 'index' %>">Blog</a></li>
         <li><a href="<%= url_for controller: 'welcome', action: 'Team' %>">Team</a></li>
                <li><a href="<%= url_for controller: 'welcome', action: 'Projects' %>">Projects</a></li>
@@ -27,6 +26,7 @@
     <a href="https://twitter.com/code4_food"><img src="http://i59.tinypic.com/jjph0x.jpg"style="float: right; clear: left;"  height="42" width="42"> </a></br>
 
 
+
 <h2 style="font-size:250%"><center><br> WE CODE, WE DEVELOP, WE MAKE LIFE EASIER!</br> </center></h2>
 <h3><u><i>About Code4Food</i></u>
 </h3>
@@ -39,4 +39,3 @@ integrates the information technology to the strategy, mission, and goals of the
 </body>
 
 </html>
-<%= link_to 'My Blog', controller: 'articles' %>

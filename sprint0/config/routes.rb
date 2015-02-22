@@ -1,11 +1,25 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
-
+   get 'welcome/index'
+   get 'welcome/Aboutus'
+   # get 'welcome/HomePage'
+   match '/HomePage' => 'welcome#HomePage', via: [:get]
+      match '/Contactus' => 'welcome#Contactus', via: [:get]
+         match '/AyaMagdyProfile' => 'welcome#AyaMagdyProfile', via: [:get]
+            match '/DoniaMagdyProfile' => 'welcome#DoniaMagdyProfile', via: [:get]
+               match '/HananGhannamProfile' => 'welcome#HananGhannamProfile', via: [:get]
+                  match '/JalaAshrafProfile' => 'welcome#JalaAshrafProfile', via: [:get]
+                     match '/MayadaTarekProfile' => 'welcome#MayadaTarekProfile', via: [:get]
+   match '/SalmaAdelProfile' => 'welcome#SalmaAdelProfile', via: [:get]
+      match '/Team' => 'welcome#Team', via: [:get]
+         match '/RanaAlaaProfile' => 'welcome#RanaAlaaProfile', via: [:get]
+            match '/Projects' => 'welcome#Projects', via: [:get]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  
+   #root :controller => 'static', :action => '/public/Company Profile/HomePage.html'
  root 'welcome#index'
 
   # Example of regular route:
